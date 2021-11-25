@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Sparkfun-em)(type Legacy)(uri ${KIPRJMOD}/Libraries/SparkFun-Electromechanical.lib)(options "")(descr ""))
+  (lib (name Sparkfun-sw)(type Legacy)(uri C:/Users/Ryan/Documents/GitHub/Microtus/Libraries/SparkFun-Switches.lib)(options "")(descr ""))
+)

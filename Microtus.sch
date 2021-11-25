@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10SU U?
+U 1 1 619D8BE4
+P 5950 3650
+F 0 "U?" H 5420 3696 50  0000 R CNN
+F 1 "ATtiny85V-10SU" H 5420 3605 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 5950 3650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 619D994A
+P 4050 1900
+F 0 "J?" H 4130 1892 50  0000 L CNN
+F 1 "Conn_01x04" H 4130 1801 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 4050 1900 50  0001 C CNN
+F 3 "~" H 4050 1900 50  0001 C CNN
+	1    4050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 619D9FDB
+P 6250 2200
+F 0 "SW?" H 6250 2485 50  0000 C CNN
+F 1 "SW_Push" H 6250 2394 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6250 2400 50  0001 C CNN
+F 3 "~" H 6250 2400 50  0001 C CNN
+	1    6250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 619DA726
+P 6950 2200
+F 0 "SW?" H 6950 2485 50  0000 C CNN
+F 1 "SW_Push" H 6950 2394 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 6950 2400 50  0001 C CNN
+F 3 "~" H 6950 2400 50  0001 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619DEDD4
+P 8100 2950
+F 0 "#PWR?" H 8100 2800 50  0001 C CNN
+F 1 "+3.3V" V 8115 3078 50  0000 L CNN
+F 2 "" H 8100 2950 50  0001 C CNN
+F 3 "" H 8100 2950 50  0001 C CNN
+	1    8100 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619DFB31
+P 8200 3750
+F 0 "#PWR?" H 8200 3500 50  0001 C CNN
+F 1 "GND" V 8205 3622 50  0000 R CNN
+F 2 "" H 8200 3750 50  0001 C CNN
+F 3 "" H 8200 3750 50  0001 C CNN
+	1    8200 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 3750 8100 3750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619DEFFC
+P 8100 3450
+F 0 "#PWR?" H 8100 3300 50  0001 C CNN
+F 1 "+3.3V" V 8150 3700 50  0000 C CNN
+F 2 "" H 8100 3450 50  0001 C CNN
+F 3 "" H 8100 3450 50  0001 C CNN
+	1    8100 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619DF93A
+P 8200 3250
+F 0 "#PWR?" H 8200 3000 50  0001 C CNN
+F 1 "GND" V 8205 3122 50  0000 R CNN
+F 2 "" H 8200 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT_Dual RV?
+U 1 1 619DC2CF
+P 8000 3350
+F 0 "RV?" V 7900 3550 50  0000 C CNN
+F 1 "R_POT_Dual" V 8000 3600 50  0000 C CNN
+F 2 "" H 8250 3275 50  0001 C CNN
+F 3 "~" H 8250 3275 50  0001 C CNN
+	1    8000 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 3250 8200 3250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619E82FA
+P 5750 2200
+F 0 "#PWR?" H 5750 2050 50  0001 C CNN
+F 1 "+3.3V" V 5765 2328 50  0000 L CNN
+F 2 "" H 5750 2200 50  0001 C CNN
+F 3 "" H 5750 2200 50  0001 C CNN
+	1    5750 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619E9686
+P 7450 2200
+F 0 "#PWR?" H 7450 1950 50  0001 C CNN
+F 1 "GND" V 7455 2072 50  0000 R CNN
+F 2 "" H 7450 2200 50  0001 C CNN
+F 3 "" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619EA2D9
+P 5900 2200
+F 0 "R?" V 5693 2200 50  0000 C CNN
+F 1 "2.5k" V 5784 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 2200 50  0001 C CNN
+F 3 "~" H 5900 2200 50  0001 C CNN
+	1    5900 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619EB83D
+P 6600 2200
+F 0 "R?" V 6393 2200 50  0000 C CNN
+F 1 "5k" V 6484 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 2200 50  0001 C CNN
+F 3 "~" H 6600 2200 50  0001 C CNN
+	1    6600 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619EBB3B
+P 7300 2200
+F 0 "R?" V 7093 2200 50  0000 C CNN
+F 1 "1k" V 7184 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7230 2200 50  0001 C CNN
+F 3 "~" H 7300 2200 50  0001 C CNN
+	1    7300 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 2200 6400 2400
+Wire Wire Line
+	6400 2400 7100 2400
+Wire Wire Line
+	7100 2400 7100 2200
+Text GLabel 3850 2000 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 3850 2100 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 7900 3100 0    50   Input ~ 0
+X_POS
+Text GLabel 7900 3600 0    50   Input ~ 0
+Y_POS
+Text GLabel 6750 2400 3    50   Input ~ 0
+BUTTONS
+$Comp
+L power:GND #PWR?
+U 1 1 619EDE31
+P 5950 4250
+F 0 "#PWR?" H 5950 4000 50  0001 C CNN
+F 1 "GND" H 5955 4077 50  0000 C CNN
+F 2 "" H 5950 4250 50  0001 C CNN
+F 3 "" H 5950 4250 50  0001 C CNN
+	1    5950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619EE904
+P 5950 3050
+F 0 "#PWR?" H 5950 2900 50  0001 C CNN
+F 1 "+3.3V" H 5965 3223 50  0000 C CNN
+F 2 "" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 3350 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 6550 3550 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 6550 3650 2    50   Input ~ 0
+X_POS
+Text GLabel 6550 3750 2    50   Input ~ 0
+Y_POS
+Text GLabel 6550 3450 2    50   Input ~ 0
+BUTTONS
+Text GLabel 6550 3850 2    50   Input ~ 0
+RESET
+Text GLabel 7000 4700 0    50   Input ~ 0
+RESET
+$Comp
+L Switch:SW_Push SW?
+U 1 1 619EFDF4
+P 7200 4700
+F 0 "SW?" H 7200 4985 50  0000 C CNN
+F 1 "SW_Push" H 7200 4894 50  0000 C CNN
+F 2 "" H 7200 4900 50  0001 C CNN
+F 3 "~" H 7200 4900 50  0001 C CNN
+	1    7200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619F0BA1
+P 7400 4700
+F 0 "#PWR?" H 7400 4450 50  0001 C CNN
+F 1 "GND" V 7405 4572 50  0000 R CNN
+F 2 "" H 7400 4700 50  0001 C CNN
+F 3 "" H 7400 4700 50  0001 C CNN
+	1    7400 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619F141E
+P 3850 1900
+F 0 "#PWR?" H 3850 1650 50  0001 C CNN
+F 1 "GND" V 3855 1772 50  0000 R CNN
+F 2 "" H 3850 1900 50  0001 C CNN
+F 3 "" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619F1D22
+P 3850 1800
+F 0 "#PWR?" H 3850 1650 50  0001 C CNN
+F 1 "+3.3V" V 3865 1928 50  0000 L CNN
+F 2 "" H 3850 1800 50  0001 C CNN
+F 3 "" H 3850 1800 50  0001 C CNN
+	1    3850 1800
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
